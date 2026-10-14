@@ -69,7 +69,11 @@
                  th:if="${st.index < 3}">
           <a class="featured-cover" th:classappend="|fc-${st.index + 1}|"
              th:href="@{${fpost.status.permalink}}" tabindex="-1" aria-hidden="true">
-            <img th:src="@{/assets/svg/leaf.svg}" alt="">
+            <!-- 封面图：优先渲染文章真实封面，加载失败时由下方渐变底兜底 -->
+            <img class="cover-img"
+                 th:if="${fpost.spec.cover != null and fpost.spec.cover != ''}"
+                 th:src="${fpost.spec.cover}" alt="">
+            <img class="cover-leaf" th:src="@{/assets/svg/leaf.svg}" alt="">
           </a>
           <div class="post-meta">
             <a class="cat-pill" th:each="category : ${fpost.categories}"
