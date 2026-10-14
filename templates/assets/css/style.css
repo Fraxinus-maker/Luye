@@ -288,7 +288,8 @@ button{font-family:inherit;}
   height:160px;border-radius:14px;overflow:hidden;
   border:1px solid var(--glass-border-soft);
 }
-.featured-cover img{position:absolute;top:12px;right:12px;width:40px;height:40px;opacity:.18;}
+.featured-cover .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.featured-cover .cover-leaf{position:absolute;top:12px;right:12px;width:40px;height:40px;opacity:.18;}
 .featured-cover.fc-1{background:linear-gradient(120deg,#0D1F17 0%,#1A3329 100%);}
 .featured-cover.fc-2{background:linear-gradient(120deg,#0A1712 0%,#14303F 100%);}
 .featured-cover.fc-3{background:linear-gradient(120deg,#0D1712 0%,#2E2A14 100%);}
