@@ -28,12 +28,12 @@
       </div>
       <span class="stat-sep" aria-hidden="true"></span>
       <div class="stat">
-        <span class="stat-num" th:text="${#lists.size(categoryFinder.getAll())}">6</span>
+        <span class="stat-num" th:text="${categoryFinder.list(1, 1).total}">6</span>
         <span class="stat-label">分类</span>
       </div>
       <span class="stat-sep" aria-hidden="true"></span>
       <div class="stat">
-        <span class="stat-num" th:text="${#lists.size(tagFinder.getAll())}">23</span>
+        <span class="stat-num" th:text="${tagFinder.list(1, 1).total}">23</span>
         <span class="stat-label">标签</span>
       </div>
       <th:block th:if="${theme.config.hero.stat_visits != null and theme.config.hero.stat_visits != ''}">
