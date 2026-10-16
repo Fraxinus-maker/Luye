@@ -133,6 +133,19 @@ spec:
           label: 加载在线衬线字体
           value: true
           help: 加载 Google Fonts 的 Noto Serif SC / Noto Sans SC / Source Serif 4。国内访问缓慢时可关闭，自动回退系统字体。
+    - group: font
+      label: 字体大小
+      formSchema:
+        - $formkit: number
+          name: hero_title
+          label: 首页大标题字号
+          value: 60
+          help: 首页 Hero 主标题的最大字号（px），默认 60。改大改小即时生效。
+        - $formkit: number
+          name: post_body
+          label: 文章正文字号
+          value: 16
+          help: 文章页正文的字号（px），默认 16。
     - group: footer
       label: 页脚
       formSchema:

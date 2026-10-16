@@ -12,6 +12,8 @@
   <link rel="stylesheet" th:href="@{/assets/css/style.css}">
   <style th:if="${theme.config.style.accent_color != null and theme.config.style.accent_color != ''}"
         th:inline="text">:root{--green:[[${theme.config.style.accent_color}]];}</style>
+  <style th:if="${theme.config.font != null}"
+        th:inline="text">:root{--hero-title-size:[[${theme.config.font.hero_title ?: 60}]]px;--post-font-size:[[${theme.config.font.post_body ?: 16}]]px;}</style>
   <th:block th:if="${head != null}">
     <th:block th:replace="${head}"></th:block>
   </th:block>
