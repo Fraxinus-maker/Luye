@@ -147,8 +147,38 @@ spec:
         - $formkit: text
           name: github
           label: GitHub 主页
-          value: "https://github.com/ReganQing"
+          value: "https://github.com/Fraxinus-maker"
         - $formkit: text
           name: copyright
           label: 版权文案
           value: "代码与思考"
+    - group: footer_pages
+      label: 页脚页面
+      formSchema:
+        - $formkit: checkbox
+          name: show_privacy
+          label: 显示隐私政策
+          value: true
+        - $formkit: text
+          name: privacy_url
+          label: 隐私政策链接
+          value: "/privacy-policy"
+          help: 改页面正文请前往「内容 → 页面 → 隐私政策」编辑。
+        - $formkit: checkbox
+          name: show_terms
+          label: 显示用户协议
+          value: true
+        - $formkit: text
+          name: terms_url
+          label: 用户协议链接
+          value: "/user-agreement"
+          help: 改页面正文请前往「内容 → 页面 → 用户协议」编辑。
+        - $formkit: checkbox
+          name: show_about
+          label: 显示关于
+          value: true
+        - $formkit: text
+          name: about_url
+          label: 关于链接
+          value: "/about"
+          help: 改页面正文请前往「内容 → 页面 → 关于」编辑。

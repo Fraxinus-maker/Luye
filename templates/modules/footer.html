@@ -16,8 +16,15 @@
          th:if="${theme.config.footer.github != null and theme.config.footer.github != ''}"
          th:href="${theme.config.footer.github}">GitHub</a>
       <a class="contact-pill" th:href="@{/archives}">文章归档</a>
-      <a class="contact-pill" th:href="@{/privacy-policy}">隐私政策</a>
-      <a class="contact-pill" th:href="@{/user-agreement}">用户协议</a>
+      <a class="contact-pill"
+         th:if="${theme.config.footer_pages.show_privacy}"
+         th:href="@{${theme.config.footer_pages.privacy_url}}">隐私政策</a>
+      <a class="contact-pill"
+         th:if="${theme.config.footer_pages.show_terms}"
+         th:href="@{${theme.config.footer_pages.terms_url}}">用户协议</a>
+      <a class="contact-pill"
+         th:if="${theme.config.footer_pages.show_about}"
+         th:href="@{${theme.config.footer_pages.about_url}}">关于</a>
     </div>
     <div class="bottom-bar">
       <span>
