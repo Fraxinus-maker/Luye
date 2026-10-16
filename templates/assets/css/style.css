@@ -580,9 +580,14 @@ button{font-family:inherit;}
 
 /* ============================ 评论区 ============================ */
 .comment-panel{margin-top:48px;}
-/* 评论插件次级文字提亮（覆盖插件默认暗色） */
+/* 评论插件强制使用深色模式配色（插件检测不到主题深色模式时文字会过暗） */
 .comment-panel{
+  --halo-cw-text-1-color:#f9fafb !important;
+  --halo-cw-text-2-color:#e2e8f0 !important;
   --halo-cw-text-3-color:#d1d5db !important;
+  --halo-cw-muted-1-color:#64748b !important;
+  --halo-cw-muted-2-color:#475569 !important;
+  --halo-cw-muted-3-color:#334155 !important;
 }
 .comment-panel .panel-title{
   display:flex;align-items:center;gap:12px;margin-bottom:20px;
