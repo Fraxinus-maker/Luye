@@ -182,3 +182,24 @@ spec:
           label: 关于链接
           value: "/about"
           help: 改页面正文请前往「内容 → 页面 → 关于」编辑。
+    - group: friend_links
+      label: 友情链接
+      formSchema:
+        - $formkit: checkbox
+          name: show
+          label: 显示友情链接
+          value: true
+        - $formkit: repeater
+          name: links
+          label: 链接列表
+          value: []
+          children:
+            - $formkit: text
+              name: name
+              label: 网站名称
+              value: ""
+            - $formkit: text
+              name: url
+              label: 网站链接
+              value: ""
+              help: 填写完整链接，如 https://example.com

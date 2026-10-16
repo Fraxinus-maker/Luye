@@ -26,6 +26,14 @@
          th:if="${theme.config.footer_pages.show_about}"
          th:href="@{${theme.config.footer_pages.about_url}}">关于</a>
     </div>
+    <div class="friend-links"
+         th:if="${theme.config.friend_links != null and theme.config.friend_links.show and theme.config.friend_links.links != null and not #lists.isEmpty(theme.config.friend_links.links)}">
+      <span class="friend-links-label">友情链接</span>
+      <a class="friend-link"
+         th:each="link : ${theme.config.friend_links.links}"
+         th:href="${link.url}" th:text="${link.name}"
+         target="_blank" rel="noopener">友链</a>
+    </div>
     <div class="bottom-bar">
       <span>
         © <th:block th:text="${#dates.format(#dates.createNow(), 'yyyy')}"></th:block>

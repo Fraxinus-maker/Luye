@@ -545,6 +545,14 @@ button{font-family:inherit;}
 }
 .bottom-bar span,.bottom-bar a{font-weight:300;font-size:13px;color:var(--muted);}
 .bottom-bar a:hover{color:var(--green);}
+.friend-links{
+  width:100%;max-width:var(--container);
+  display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:center;
+  margin-top:28px;font-size:14px;
+}
+.friend-links-label{font-weight:500;color:var(--green);letter-spacing:2px;}
+.friend-link{font-weight:300;color:var(--sub);transition:color .3s ease;}
+.friend-link:hover{color:var(--green);}
 
 /* ============================ 返回顶部 ============================ */
 .to-top{
