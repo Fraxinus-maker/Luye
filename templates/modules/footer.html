@@ -16,6 +16,8 @@
          th:if="${theme.config.footer.github != null and theme.config.footer.github != ''}"
          th:href="${theme.config.footer.github}">GitHub</a>
       <a class="contact-pill" th:href="@{/archives}">文章归档</a>
+      <a class="contact-pill" th:href="@{/privacy-policy}">隐私政策</a>
+      <a class="contact-pill" th:href="@{/user-agreement}">用户协议</a>
     </div>
     <div class="bottom-bar">
       <span>
@@ -25,7 +27,7 @@
           · <th:block th:text="${theme.config.footer.copyright}"></th:block>
         </span>
       </span>
-      <span>Powered by <a href="https://www.halo.run" target="_blank" rel="noopener">Halo</a> · 主题「绿野」</span>
+      <span>Powered by <a href="https://www.halo.run" target="_blank" rel="noopener">Halo</a> · 主题「Fokienia」</span>
     </div>
   </div>
 </footer>

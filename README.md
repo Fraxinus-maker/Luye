@@ -1,6 +1,8 @@
-# 绿野 Luye · Halo 2 主题
+# Fokienia · Halo 2 主题
 
-深绿玻璃拟态（Glassmorphism）风格的 [Halo 2](https://www.halo.run/) 博客主题。视觉语言移植自 Ron567 个人主页（[aboutme](https://github.com/ReganQing/aboutme)）：雾绿光晕背景、毛玻璃卡片、衬线大标题、胶囊按钮，以及标志性的晴 / 雨 / 雪 Canvas 粒子背景特效。
+深绿玻璃拟态（Glassmorphism）风格的 [Halo 2](https://www.halo.run/) 博客主题：雾绿光晕背景、毛玻璃卡片、衬线大标题、胶囊按钮，以及晴 / 雨 / 雪 Canvas 粒子背景特效。
+
+> 本主题由 [绿野 Luye](https://github.com/ReganQing/Luye)（ReganQing，GPL-3.0）fork 而来，保留原主题的全部设计与功能，主要做了个人化调整：主题改名、首页文案、作者信息、页脚直达链接（隐私政策 / 用户协议）。
 
 ## 特性
 
@@ -15,9 +17,9 @@
 
 要求 Halo ≥ 2.26.0（使用了该版本引入的 `layout.html` 页面布局契约）。
 
-1. 将本目录打包为 zip：在 `theme-luye` 目录的**上一级**执行 `zip -r theme-luye.zip theme-luye`（确保 zip 内第一层是 `theme-luye` 文件夹）。
+1. 将本目录打包为 zip：在 `Luye` 目录的**上一级**执行 `zip -r theme-fokienia.zip Luye`（确保 zip 内第一层是 `Luye` 文件夹）。
 2. 进入 Halo 后台 → 外观 → 主题 → 安装主题，上传 zip。
-3. 启用「绿野 Luye」，并在「主题设置」中按需调整后点击保存（修改设置后如未生效，点击「重载主题配置」）。
+3. 启用「Fokienia」，并在「主题设置」中按需调整后点击保存（修改设置后如未生效，点击「重载主题配置」）。
 
 ## 主题设置说明
 

@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: Setting
 metadata:
-  name: theme-luye-setting
+  name: theme-fokienia-setting
 spec:
   forms:
     - group: basic
@@ -10,7 +10,7 @@ spec:
         - $formkit: text
           name: brand_sub
           label: 品牌副标题
-          value: "SOFTWARE · AI"
+          value: "TECH NEWBIE"
           help: 导航栏 Logo 名称下方的小字，建议英文短语。
         - $formkit: attachment
           name: avatar
@@ -32,15 +32,15 @@ spec:
         - $formkit: text
           name: eyebrow
           label: 眉题
-          value: "SOFTWARE & AI ENGINEER · 软件与人工智能工程师"
+          value: "TECH NEWBIE · 一个技术小白的折腾记录"
         - $formkit: text
           name: title
           label: 主标题
-          value: "在代码与智能之间，造一片绿野"
+          value: "小白折腾，步步留痕"
         - $formkit: textarea
           name: subtitle
           label: 副标题
-          value: "这里收录我的开源作品、技术随笔与实验——关于工程，关于智能，也关于如何把复杂变简单。"
+          value: "这里没有高深的技术文章，只有一个新手折腾 VPS、建站、自建服务的真实记录——踩过的坑、走过的弯路都写下来，方便自己回看，也希望能帮到同样在路上的人。"
         - $formkit: attachment
           name: image
           label: 横幅图
@@ -110,12 +110,12 @@ spec:
         - $formkit: text
           name: name
           label: 署名
-          value: "Ron567"
+          value: "Fokienia"
           help: 留空时使用站点标题。
         - $formkit: textarea
           name: bio
           label: 简介
-          value: "软件与人工智能工程师。在控制系统、接口测试与开源工具之间游走，相信把复杂变简单是工程的美德。"
+          value: "一个纯粹的技术小白，服务器、建站、网络都没正经玩过，现在完全是摸索状态——走一步、踩一个坑、记一篇笔记。"
     - group: style
       label: 外观
       formSchema:
