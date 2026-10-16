@@ -580,6 +580,10 @@ button{font-family:inherit;}
 
 /* ============================ 评论区 ============================ */
 .comment-panel{margin-top:48px;}
+/* 评论插件次级文字提亮（覆盖插件默认暗色） */
+.comment-panel{
+  --halo-cw-text-3-color:#d1d5db !important;
+}
 .comment-panel .panel-title{
   display:flex;align-items:center;gap:12px;margin-bottom:20px;
   font-family:var(--serif);font-weight:400;font-size:22px;color:var(--text);
