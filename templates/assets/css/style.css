@@ -154,7 +154,7 @@ button{font-family:inherit;}
 .hero .headline{
   max-width:1000px;
   font-family:var(--serif);font-weight:300;
-  font-size:var(--hero-title-size,60px);line-height:125%;color:var(--text);
+  font-size:clamp(34px,5vw,60px);line-height:125%;color:var(--text);
 }
 .hero .sub{
   max-width:680px;
@@ -383,7 +383,7 @@ button{font-family:inherit;}
 }
 
 /* 正文排版（渲染后的 Markdown / 富文本） */
-.post-content{font-size:var(--post-font-size,16px);line-height:1.9;color:var(--para);word-break:break-word;}
+.post-content{font-size:16px;line-height:1.9;color:var(--para);word-break:break-word;}
 .post-content > *:first-child{margin-top:0;}
 .post-content > *:last-child{margin-bottom:0;}
 .post-content h1,.post-content h2,.post-content h3,
@@ -630,7 +630,6 @@ button{font-family:inherit;}
 @media (max-width:640px){
   .card-grid{grid-template-columns:1fr;}
   .hero{padding:80px 20px 60px;gap:22px;}
-  .hero .headline{font-size:calc(var(--hero-title-size,60px) * 0.55);}
   .section{padding:56px 0;}
   .post-item{padding:20px 22px;}
   .post-item-head{flex-direction:column;gap:6px;}
